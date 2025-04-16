@@ -3,59 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Improve Your Skills with Frontend Mentor</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-      }
+    <!-- displays site properly based on user's device -->
 
-      .container {
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #d5e1ef;
         display: flex;
         justify-content: center;
-        align-items: center;
+        text-align: center;
         height: 100vh;
       }
-
-      .card {
-        background-color: white;
-        padding: 2rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      .attribution {
+        font-size: 11px;
+        text-align: center;
         text-align: center;
       }
-
-      .qr-code {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 1rem;
+      .attribution a {
+        color: hsl(228, 45%, 44%);
       }
-
-      h1 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
       }
-
-      p {
-        color: #666;
-        margin-bottom: 1.5rem;
+      .card {
+        border-radius: 20px;
+        box-shadow: 0 10px 15px rgb(0, 0, 0.5);
+        background-color: white;
+        max-width: 350px;
+        text-align: center;
+        padding: 20px;
+      }
+      .qr-img {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+      .card h1 {
+        font-size: 24px;
+        font-weight: 800;
+        color: #1f3251;
+        margin-bottom: 15px;
+      }
+      .card p {
+        font-size: 15px;
+        font-weight: 400;
+        color: #7b879d;
       }
     </style>
   </head>
   <body>
-    <main>
-      <div class="container">
-        <div class="card">
-          <img class="qr-code" src="./images/image-qr-code.png" alt="QR Code" />
-          <h1>Improve Your Skills with Frontend Mentor</h1>
-          <p>
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level.
-          </p>
-        </div>
+    <div class="container">
+      <div class="card">
+        <img src="./images/image-qr-code.png" alt="qr scanner" class="qr-img" />
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
       </div>
-    </main>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Sakshi Kakde</a>.
+      </div>
+    </div>
   </body>
 </html>
